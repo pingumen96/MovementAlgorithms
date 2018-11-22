@@ -688,6 +688,7 @@ GameObject:
   - component: {fileID: 892522099}
   - component: {fileID: 892522098}
   - component: {fileID: 892522095}
+  - component: {fileID: 892522101}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -773,8 +774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea48f4058a6671647bdd34a3a2ebf554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 0
-  maxAcceleration: 0
+  maxSpeed: 5
+  maxAcceleration: 5
   maxRotation: 300
   maxAngularAcceleration: 3
   orientation: 0
@@ -788,17 +789,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 892522093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa76aca5ad3d66d4c92e026e84c3d83e, type: 3}
+  m_Script: {fileID: 11500000, guid: a883ce64ad8123f4181a736b516d067f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1679117020}
-  maxSpeed: 0
-  maxAcceleration: 0
-  maxRotation: 300
+  target: {fileID: 0}
+  maxSpeed: 3
+  maxAcceleration: 3
+  maxRotation: 350
   maxAngularAcceleration: 3
-  targetRadius: 0
-  slowRadius: 0
+  targetRadius: 3
+  slowRadius: 5
   timeToTarget: 0.3
+  offset: 0
+  radius: 20
+  rate: 180
+--- !u!114 &892522101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892522093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2acae2a22a8ab340bb518cc88c19bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1424303368
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +971,7 @@ GameObject:
   - component: {fileID: 1679117023}
   - component: {fileID: 1679117022}
   - component: {fileID: 1679117024}
+  - component: {fileID: 1679117025}
   m_Layer: 0
   m_Name: Inky
   m_TagString: Untagged
@@ -993,14 +1009,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679117020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8929a62a5de5d5641be2a22afcfbc38c, type: 3}
+  m_Script: {fileID: 11500000, guid: aa76aca5ad3d66d4c92e026e84c3d83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 892522093}
-  maxSpeed: 7
-  maxAcceleration: 3
-  maxRotation: 0
-  maxAngularAcceleration: 0
+  maxSpeed: 0
+  maxAcceleration: 0
+  maxRotation: 5
+  maxAngularAcceleration: 50
+  targetRadius: 0
+  slowRadius: 0
+  timeToTarget: 0.1
 --- !u!136 &1679117023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1027,11 +1046,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 4
   maxAcceleration: 3
-  maxRotation: 0
-  maxAngularAcceleration: 0
-  orientation: 0
-  rotation: 0
+  maxRotation: 5
+  maxAngularAcceleration: 50
+  orientation: 2
+  rotation: 2
   velocity: {x: 0, y: 0, z: 0}
+--- !u!114 &1679117025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679117020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2acae2a22a8ab340bb518cc88c19bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1861602057
 GameObject:
   m_ObjectHideFlags: 0

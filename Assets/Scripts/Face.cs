@@ -23,6 +23,7 @@ public class Face : Align {
             targetOrientation *= Mathf.Rad2Deg;
             target.GetComponent<Agent>().orientation = targetOrientation;
         }
+        
         return base.GetSteering();
     }
 }
