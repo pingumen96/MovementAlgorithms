@@ -57,6 +57,10 @@ public class Agent : MonoBehaviour {
             velocity = Vector3.zero;
         }
 
+        if(rotation > maxRotation) {
+            rotation = maxRotation;
+        }
+
         steering = new Steering();
     }
 }
