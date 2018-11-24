@@ -18,8 +18,9 @@ public class Agent : MonoBehaviour {
         steering = new Steering();
 	}
 
-    public void SetSteering(Steering steering) {
-        this.steering = steering;
+    public void SetSteering(Steering steering, float weight) {
+        this.steering.linear += weight * steering.linear;
+        this.steering.angular += weight * steering.angular;
     }
 	
 	// Update is called once per frame
