@@ -1018,8 +1018,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 4
   maxAcceleration: 3
-  maxRotation: 5
-  maxAngularAcceleration: 100
+  maxRotation: 30
+  maxAngularAcceleration: 1000
   orientation: 2
   rotation: 2
   velocity: {x: 0, y: 0, z: 0}
