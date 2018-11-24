@@ -703,8 +703,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 892522093}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 118.68332, y: 0, z: -76.991974}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 118.68332, y: 3, z: -76.991974}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 638834198}
   m_RootOrder: 1
@@ -793,10 +793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  maxSpeed: 3
-  maxAcceleration: 3
-  maxRotation: 350
-  maxAngularAcceleration: 3
   targetRadius: 3
   slowRadius: 5
   timeToTarget: 0.3
@@ -1009,17 +1005,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679117020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa76aca5ad3d66d4c92e026e84c3d83e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8929a62a5de5d5641be2a22afcfbc38c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 892522093}
-  maxSpeed: 0
-  maxAcceleration: 0
-  maxRotation: 5
-  maxAngularAcceleration: 50
-  targetRadius: 0
-  slowRadius: 0
-  timeToTarget: 0.1
 --- !u!136 &1679117023
 CapsuleCollider:
   m_ObjectHideFlags: 0
