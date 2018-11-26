@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Agent : MonoBehaviour {
-    public float maxSpeed;
-    public float maxAcceleration;
-    public float maxRotation; // rappresenta in qualche modo un attrito angolare
-    public float maxAngularAcceleration;
+    public float maxSpeed = 5.0f;
+    public float maxAcceleration = 3.0f;
+    public float maxRotation = 90.0f; // rotazione massima per frame
+    public float maxAngularAcceleration = 10.0f;
     public float orientation;
     public float rotation;
     public Vector3 velocity;

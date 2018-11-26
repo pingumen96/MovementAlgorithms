@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Wander : Face {
-    public float offset;
-    public float radius;
-    public float rate;
+    public float offset = 0.0f;
+    public float radius = 15.0f;
+    public float rate = 300.0f;
 
     public override void Awake() {
         target = new GameObject();

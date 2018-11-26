@@ -946,8 +946,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1679117021}
   - component: {fileID: 1679117023}
-  - component: {fileID: 1679117026}
   - component: {fileID: 1679117022}
+  - component: {fileID: 1679117026}
   - component: {fileID: 1679117024}
   - component: {fileID: 1679117025}
   m_Layer: 0
@@ -987,11 +987,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679117020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8929a62a5de5d5641be2a22afcfbc38c, type: 3}
+  m_Script: {fileID: 11500000, guid: ea48f4058a6671647bdd34a3a2ebf554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
-  target: {fileID: 892522093}
+  maxSpeed: 5
+  maxAcceleration: 3
+  maxRotation: 90
+  maxAngularAcceleration: 10
+  orientation: 0
+  rotation: 0
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!136 &1679117023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1013,16 +1018,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679117020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea48f4058a6671647bdd34a3a2ebf554, type: 3}
+  m_Script: {fileID: 11500000, guid: a883ce64ad8123f4181a736b516d067f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 4
-  maxAcceleration: 3
-  maxRotation: 30
-  maxAngularAcceleration: 1000
-  orientation: 2
-  rotation: 2
-  velocity: {x: 0, y: 0, z: 0}
+  weight: 1
+  target: {fileID: 0}
+  targetRadius: 0
+  slowRadius: 0
+  timeToTarget: 0.1
+  offset: 0
+  radius: 15
+  rate: 300
 --- !u!114 &1679117025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,11 +1048,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679117020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa76aca5ad3d66d4c92e026e84c3d83e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d3a1ce70f8228a41b83dc7e5d8f017d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weight: 1
-  target: {fileID: 892522093}
+  target: {fileID: 0}
   targetRadius: 0
   slowRadius: 0
   timeToTarget: 0.1
